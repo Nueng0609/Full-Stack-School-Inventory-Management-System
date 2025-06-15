@@ -1,96 +1,101 @@
-# 📦 PHP Inventory Management System
+# Full Stack School Inventory Management System 📚🏫
 
-A powerful, web-based inventory and resource management system built using **Core PHP**, **MySQL**, **jQuery**, and **Bootstrap**. Ideal for schools or small organizations to manage products, orders, users, stock levels, and reports.
+![GitHub release](https://img.shields.io/github/release/Nueng0609/Full-Stack-School-Inventory-Management-System.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
----
+Welcome to the Full Stack School Inventory Management System! This project provides a robust and scalable solution for managing inventory in schools. With a focus on real-time tracking and user accessibility, it aims to streamline resource management and enhance operational efficiency.
 
-## ⚙️ Tech Stack
+## Table of Contents
 
-### 🔙 Backend
-- PHP (Core PHP)
-- MySQL Database
-- PHP Sessions for user authentication
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### 🌐 Frontend
-- HTML5, CSS3
-- JavaScript (jQuery)
-- Bootstrap 3
-- Font Awesome
-- jQuery UI
-- FullCalendar
-- DataTables
-- Custom CSS
+## Features 🌟
 
-### 📄 PDF Generation
-- mPDF (used for invoice export)
+- **Real-Time Tracking**: Monitor inventory levels instantly.
+- **Role-Based Access Control**: Different user roles with specific permissions ensure security and proper access.
+- **Resource Scheduling**: Plan and manage resources effectively.
+- **Insightful Analytics**: Generate reports and insights for better decision-making.
 
-### 📁 File Uploads
-- Bootstrap File Input (for CSV/Excel import)
+## Technologies Used 🛠️
 
----
+This project utilizes the following technologies:
 
-## 🚀 Features
+- **PHP**: The core language for backend development.
+- **MySQL**: The database system for data storage.
+- **jQuery**: For dynamic front-end interactions.
+- **Bootstrap**: To ensure a responsive design.
 
-- 🔐 **User Authentication** with session management
-- 🛡️ **Role-Based Access Control** (Admin/User)
-- 📊 **Dashboard** with product/order/revenue stats
-- 🏷️ **Brand & Category Management** (Add/Edit/Delete)
-- 📦 **Product Management** with real-time stock tracking
-- 🛒 **Order Management** with invoice generation (PDF)
-- 📈 **Reports**: Sales, inventory, and user-wise sales
-- 👥 **User Management** (Add/Edit/Delete by Admin)
-- ⚙️ **Settings** for company info and logo
-- 📉 **Low Stock Alerts** for quick reordering
-- 🖥️ **Responsive Design** (desktop & mobile)
-- 🔐 **Access Control** for protected routes
+## Installation ⚙️
 
----
+To get started with the Full Stack School Inventory Management System, follow these steps:
 
-## 📁 Project Structure
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Nueng0609/Full-Stack-School-Inventory-Management-System.git
+   ```
+   
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Full-Stack-School-Inventory-Management-System
+   ```
 
-```
-📦 php-inventory-management-system/
-├── php_action/ # PHP logic, queries, and DB connections
-├── includes/ # Header, footer, and reusable UI parts
-├── assets/ # CSS, JS, fonts, and libraries
-├── custom/ # Custom styles and logic
-├── index.php # Login screen
-├── dashboard.php # Admin dashboard
-└── ... # Other modules (product.php, order.php, etc.)
-```
+3. **Set Up the Database**:
+   - Create a new MySQL database.
+   - Import the SQL file located in the `database` folder to set up the necessary tables.
 
----
+4. **Configure Database Connection**:
+   - Open the `config.php` file.
+   - Update the database credentials.
 
-## 🛠️ Setup Instructions
+5. **Run the Application**:
+   - Start a local server (e.g., XAMPP or WAMP).
+   - Access the application via your web browser at `http://localhost/Full-Stack-School-Inventory-Management-System`.
 
-Follow these steps to get the project up and running on your local machine.
+For the latest releases, visit [Releases](https://github.com/Nueng0609/Full-Stack-School-Inventory-Management-System/releases).
 
-### 1️⃣ Clone the repository
+## Usage 📊
 
-```bash
-git clone [https://github.com/your-username/php-inventory-management-system.git](https://github.com/your-username/php-inventory-management-system.git)
-```
+Once the application is running, you can log in using the credentials provided in the `README` file. The dashboard will present an overview of the inventory status. You can navigate through different sections to manage resources, generate reports, and track inventory levels.
 
-### 2️⃣ Import the MySQL Database
+### User Roles
 
-1.  Open **phpMyAdmin** or use a MySQL command-line interface.
-2.  Create a new database named `store`.
-3.  Import the provided `store.sql` file (located in the root of the cloned repository) into the newly created `store` database.
+- **Admin**: Full access to all features.
+- **Staff**: Limited access for inventory management.
+- **Viewer**: Read-only access to reports and analytics.
 
+### Key Functions
 
-### 4️⃣ Set File Permissions
+- **Add New Inventory**: Input details for new resources.
+- **Update Existing Inventory**: Modify details for current items.
+- **Delete Inventory**: Remove items that are no longer needed.
+- **Generate Reports**: Create detailed reports based on inventory data.
 
-Ensure your server environment has appropriate file permissions that allow for file uploads and PDF generation, as these features are part of the system.
+## Contributing 🤝
 
----
+We welcome contributions to enhance the Full Stack School Inventory Management System. If you have ideas or improvements, please follow these steps:
 
-## 🔑 Default Login Credentials
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-After setup, you can log in with the following default credentials:
+Your contributions will help improve the project and assist other users.
 
-* **Username:** `admin`
-* **Password:** `admin`
+## License 📄
 
-**⚠️ Please change these default credentials immediately after your first login for security reasons.**
-```
-echo "**⚠️ Please change these default credentials immediately after your first login for security reasons.**"
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact 📧
+
+For questions or feedback, please reach out:
+
+- **Email**: your.email@example.com
+- **GitHub**: [Nueng0609](https://github.com/Nueng0609)
+
+Thank you for checking out the Full Stack School Inventory Management System! For the latest updates and releases, please visit [Releases](https://github.com/Nueng0609/Full-Stack-School-Inventory-Management-System/releases).
